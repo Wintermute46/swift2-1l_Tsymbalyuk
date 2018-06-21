@@ -10,17 +10,13 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-///////////////////////////////////////////////////////////////
-//      IBOutlets
-///////////////////////////////////////////////////////////////
+    // MARK: - IBOutlets
 
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var userPass: UITextField!
     @IBOutlet weak var scrolView: UIScrollView!
     
-///////////////////////////////////////////////////////////////
-//      IBActions
-///////////////////////////////////////////////////////////////
+    // MARK: - IBActions
     
     @IBAction func loginPressed(_ sender: UIButton) {
         
@@ -35,9 +31,7 @@ class LoginViewController: UIViewController {
         
     }
     
-///////////////////////////////////////////////////////////////
-//      LifeCycle
-///////////////////////////////////////////////////////////////
+    // MARK: - LifeCycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,9 +63,7 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
    
-///////////////////////////////////////////////////////////////
-//      UI methods
-///////////////////////////////////////////////////////////////
+    // MARK: - UI methods
     
     @objc func keyboardWasShown (notification: Notification) {
         
